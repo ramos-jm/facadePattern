@@ -14,7 +14,7 @@ public class HotelApp {
             System.out.print("Enter desired hotel service: ");
             int request = services.nextInt();
             if (request == 1 | request == 2 | request == 3) {
-                Service(request);
+                service(request);
             } else if (request == 4) {
                 System.out.println("\n--!!App Shutting Down!!--");
                 System.exit(0);
@@ -25,7 +25,7 @@ public class HotelApp {
 
     }
 
-    public static void Service (int request){
+    public static void service (int request){
         Scanner scan = new Scanner(System.in);
         System.out.println("");
         switch (request){
